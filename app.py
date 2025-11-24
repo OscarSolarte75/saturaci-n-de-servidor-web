@@ -56,9 +56,9 @@ P_tab = P_of_t(t_tab, K, P0, r)
 
 #Crea un DataFrame
 df = pd.DataFrame({
-    "t (h)": t_tab,
-    "P(t)": np.round(P_tab, 4),
-    "dP/dt": np.round(dPdt(t_tab, K, P0, r), 6)
+    "tiempo t(h)": t_tab,
+    "estimado de conexiones activas P(t)": np.round(P_tab, 4),
+    "velocidad de crecimiento dP/dt": np.round(dPdt(t_tab, K, P0, r), 6)
 })
 
 st.write("### Tabla de valores (0–24h)")
